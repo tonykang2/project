@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTextTable extends Migration
+class CreateCatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateTextTable extends Migration
      */
     public function up()
     {
-        Schema::create('text', function (Blueprint $table) {
+        Schema::create('cates', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('email')->unique();   
-            $table->string('password',60);
+            $table->integer('pid');
+            $table->string('path');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateTextTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('text');
+        Schema::dropIfExists('cates');
     }
 }
