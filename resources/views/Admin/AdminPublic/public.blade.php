@@ -230,6 +230,13 @@
             <div id="mws-navigation">
                 <ul>
                     <li>
+                        <a href="#"><i class="icon-user"></i> 管理员管理</a>
+                        <ul class="closed">
+                            <li><a href="/adminuser/create">管理员添加</a></li>
+                            <li><a href="/adminuser">管理员列表</a></li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="#"><i class="icon-user"></i> 用户管理</a>
                         <ul class="closed">
                             <li><a href="">用户添加</a></li>

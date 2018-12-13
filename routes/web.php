@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::resource("/admin","Admin\AdminController");
 // 后台无限极分类
 Route::resource("/admincates","Admin\CateController");
+// 后台管理员管理
+Route::resource("/adminuser","Admin\AdminuserController");
